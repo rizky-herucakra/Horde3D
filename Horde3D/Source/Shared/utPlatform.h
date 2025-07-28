@@ -18,7 +18,7 @@
 #if !defined( NDEBUG )
 	#include <assert.h>
 #endif
-#if defined(__MINGW32__)
+#if defined(__MINGW32__) || (__GNUC__ >= 14)
 	#include <math.h>
 	#include <cstdint>
 #endif
